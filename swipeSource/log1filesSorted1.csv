@@ -1,0 +1,6 @@
+Main Class Initiated!
+Table Created!
+...
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 200000
+	at dataStruct.Table.store1(Table.java:125)
+	at dataStruct.App.main(App.java:28)

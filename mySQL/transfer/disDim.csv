@@ -1,0 +1,13 @@
+disID,Neighborhood,Population,Median_income,SubwayUsage,AverageCommTime
+100,"Central Harlem",132027,40615,0.88100,34
+110,"East Harlem",129713,31380,0.91000,36
+111,"Financial District",159903,120341,0.89200,26
+112,"Washington Hts/Inwood",224365,45214,0.85800,40
+222,Greenwich/SOHO,15903,120341,0.89200,26
+333,"Lower East Side/Chinatown",152453,41418,0.91600,29
+444,Clinton/Chelsea,149447,98685,0.89600,27
+555,Midtown,149447,98685,0.89600,27
+666,"Stuyvesant Town/ Turtle Bay",143349,105758,0.91600,27
+777,"Upper West Side",192374,106315,0.86500,31
+888,"Upper East Side",221898,115383,0.84200,31
+999,"Morningside Hts/Hamilton",130739,42288,0.90100,34

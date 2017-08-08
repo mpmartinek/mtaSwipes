@@ -1,0 +1,13 @@
+Neighborhood,Pouplation,Median Income,% of Commuter,Average Travel Time to Work,districtID
+Financial District,159903,120341,0.892,25.6,111
+Greenwich/SOHO,159030,120341,0.892,25.6,222
+Lower East Side/Chinatown,152453,41418,0.916,29.2,333
+Clinton/Chelsea,149447,98685,0.896,27.3,444
+Midtown,149447,98685,0.896,27.3,555
+Stuyvesant Town/ Turtle Bay,143349,105758,0.916,26.8,666
+Upper West Side,192374,106315,0.865,30.9,777
+Upper East Side,221898,115383,0.842,31,888
+Morningside Hts/Hamilton,130739,42288,0.901,34.4,999
+Central Harlem,132027,40615,0.881,34.5,100
+East Harlem,129713,31380,0.91,35.8,110
+Washington Hts/Inwood,224365,45214,0.858,40.5,112

@@ -1,0 +1,280 @@
+col1[y] = line[x];x++;
+				System.out.println(col1[y]);
+				col2[y] = line[x];x++;
+				System.out.println(col2[y]+line[x]);
+				col3[y] = line[x];x++;
+				System.out.println(col3[y]+line[x]);
+				col4[y] = line[x];x++;
+				System.out.println(col4[y]+line[x]);
+				col5[y] = line[x];x++;
+				System.out.println(col5[y]+line[x]);
+				col6[y] = line[x];x++;
+				System.out.println(col6[y]+line[x]);
+				col7[y] = line[x];
+				System.out.println(col7[y]+line[x]);
+				y++; x = 0;
+
+				
+				
+				
+				
+					try {
+			reader = new CSVReader(new FileReader(csvFile));
+			while ((line = reader.readNext()) != null)
+				col2[y] = line [x];y++;
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+		try {
+			reader = new CSVReader(new FileReader(csvFile));
+			while ((line = reader.readNext()) != null)
+				col3[y] = line [x];y++;
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+		try {
+			reader = new CSVReader(new FileReader(csvFile));
+			while ((line = reader.readNext()) != null)
+				col4[y] = line [x];y++;
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+		try {
+			reader = new CSVReader(new FileReader(csvFile));
+			while ((line = reader.readNext()) != null)
+				col5[y] = line [x];y++;
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	try {
+			reader = new CSVReader(new FileReader(csvFile));
+			while ((line = reader.readNext()) != null)
+				col6[y] = line [x];y++;
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+		try {
+			reader = new CSVReader(new FileReader(csvFile));
+			while ((line = reader.readNext()) != null)
+				col7[y] = line [x];y++;
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+			
+			
+			
+			
+			-------------------------------
+			
+	public void store(){
+		System.out.println("Storing...");
+		CSVReader reader = null;
+		int x = 0;
+		int y = 0;
+		try {
+			reader = new CSVReader(new FileReader(csvFile));
+			while ((line = reader.readNext()) != null){
+				col1[y] = line [x];y++;}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		y = 0;x++;
+		try {
+			reader = new CSVReader(new FileReader(csvFile));
+			while ((line = reader.readNext()) != null){
+				col2[y] = line [x];y++;}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+		y = 0;x++;
+		try {
+			reader = new CSVReader(new FileReader(csvFile));
+			while ((line = reader.readNext()) != null){
+				col3[y] = line [x];y++;}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+		y = 0;x++;
+		try {
+			reader = new CSVReader(new FileReader(csvFile));
+			while ((line = reader.readNext()) != null){
+				col4[y] = line [x];y++;}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+		y = 0;x++;
+		try {
+			reader = new CSVReader(new FileReader(csvFile));
+			while ((line = reader.readNext()) != null){
+				col5[y] = line [x];y++;}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		y = 0;x++;
+		try {
+			reader = new CSVReader(new FileReader(csvFile));
+			while ((line = reader.readNext()) != null){
+				col6[y] = line [x];y++;}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		y = 0;x++;
+		try {
+			reader = new CSVReader(new FileReader(csvFile));
+			while ((line = reader.readNext()) != null){
+				col7[y] = line [x];y++;}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+	}
+	
+	
+	
+	
+	
+	
+	public void store(){
+		System.out.println("Storing...");
+		CSVReader reader = null;
+		String[] linkList = getLinks();
+		int x = 2;
+		int y = 0;
+		int linkN = getLength(linkList);
+		for(int o=0;o<2;o++){
+			URL link = new URL(linkList[o]);
+			
+			URL stockURL = new URL("http://example.com/stock.csv");
+			BufferedReader in = new BufferedReader(new InputStreamReader(stockURL.openStream()));
+			CSVReader reader = new CSVReader(in);
+			
+			
+			try {
+				reader = new CSVReader(new FileReader(link));
+			} catch (FileNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			try {
+				while ((lineIn = reader.readNext()) != null){
+					//if(line[1] == "JOURNAL SQUARE"){
+					col1[y] = lineIn[x];x++;	
+					col2[y] = lineIn[x];x++;
+					col3[y] = lineIn[x];x++;x++;
+					col4[y] = lineIn[x];x++;
+					col5[y] = lineIn[x];x++;x++;
+					col6[y] = lineIn[x];x++;
+					//col6[y] = Long.parseLong(line[x]);x++;
+					col7x[y] = lineIn[x];
+					//col7[y] = Long.parseLong(line[x]);
+					//}
+					x=2;y++;
+				}
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	while(r<6){
+						System.out.print(lineIn[r]);
+						r++;
+					}
+					System.out.println(lineIn[6]);
+					r=0;
+					
+					
+					
+					
+					System.out.println(col1[i] + " " + col2[i] + ", " + col3[i] + ", " + col4[i] + ", " + col5[i] + ", " + col6[i] + ", " + col7[i]);
+					
+					
+					
+					
+					
+					
+					
+					try {
+				try {while ((lineIn = reader.readNext()) != null){
+					col1[y] = lineIn[x];x++;	
+					col2[y] = lineIn[x];x++;
+					col3[y] = lineIn[x];x++;x++;
+					col4[y] = lineIn[x];x++;
+					col5[y] = lineIn[x];x++;x++;
+					col6[y] = lineIn[x];x++;
+					col7[y] = lineIn[x];
+					x=2;y++;
+				}
+				} catch (ArrayIndexOutOfBoundsException e) { 
+					
+				} 
+				
+					} catch (IOException e) {
+				}
+				// TODO Auto-generated catch block
+			System.out.println("---------------------NEXT FILE---------------------");
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		TESTED FOR INPUT AND WORKS!!!!! (THE ONE BELOW THIS COMMENT)
+		
+			public void store1(){
+		System.out.println("...");
+		CSVReader reader = null;
+		String[] linkList = getLinks();
+		
+		int x = 0;
+		int y = 0;
+		int linkN = getLength(linkList);
+
+		try {
+			reader = new CSVReader(new FileReader(csvFile));
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			while ((line = reader.readNext()) != null){
+			col1[y] = line[x];x++;
+			col2[y] = line[x];x++;
+			col3[y] = line[x];x++;
+			col4[y] = line[x];x++;
+			col5[y] = line[x];x++;
+			col6[y] = line[x];x++;
+			//col6[y] = Long.parseLong(line[x]);x++;
+			col7[y] = line[x];
+			//col7[y] = Long.parseLong(line[x]);
+			//}
+			x=0;y++;
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
