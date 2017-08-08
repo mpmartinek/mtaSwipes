@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # mtaswipes
 Cleaning/Using MTA data and geographical financial information to determine value of advertising space in subway stations
 
@@ -7,3 +8,7 @@ We set out with the goal to use MTA swipe data crossed with financial reports fr
 Some data has also allowed us to narrow a specific audience; We could identify a high swipe percentage of people who use the subway in a specific neighborhood, where the swipe numbers in that neighborhood’s stations didn’t deviate far from those numbers. Thus, if an advertiser was targeting that specific geographical audience, he would have a high reachability of those customers in the respective subway stations.
 We’ve achieved our results by obtaining financial reports on 13 neighborhoods in Manhattan, with data on median incomes, percentage of subway usage, and population. We then found MTA’s weekly swipe reports, dating back a few years. Due to the format, our biggest obstacle was to achieve cleanness of the data. The data was recorded with a separate tuple for each turnstile in every station, where every station had a different number of turnstiles. Further, the turnstile recorded its swipes from ‘beginning of time’, and daily it recorded the swipes in six four-hour segments, making the retention of the actual number of swipes in a station daily or by segment quite challenging. We wrote a Java program within which we could input as an argument select the number of weeks into the past we would like to analyze, and it would output all the swipes per station in daily, or four-hour segments. We then used Pentaho to link the swipe date with the financial information corresponding to each station, and loaded it to MySQL, where we ran queries and algorithms to produce results. 
 Thus, we could identify the highest volume stations, highest volume times in individual stations, and the targetability of certain groups of potential customers. But one should be mindful that highest volume does not mean highest value, due to large commutes in morning-times, when people are not necessarily paying too much attention. The project resulted in being a success and we have intents to share our results and produced tools with MTA for potential collaboration.
+=======
+# mtaSwipes
+Cleaning/Using MTA data and geographical financial information to determine value of advertising space in subway stations
+>>>>>>> 127be2b21156ff9f00f2b7a8ee1c6ef8c8f7ccc6
