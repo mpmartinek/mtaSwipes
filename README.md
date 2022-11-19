@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 # mtaswipes
-Cleaning/Using MTA data and geographical financial information to determine value of advertising space in subway stations
+Scraping, cleaning & analyzing MTA ridership data to determine the value of advertising space in NY subway stations.
 
 MTA Swipe Data
 
